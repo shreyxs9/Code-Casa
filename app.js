@@ -27,6 +27,9 @@ setTimeout(function () {
 }
 
 function levelup(){
+    if(started==true){
+    document.getElementById('play').hidden = true;
+}
     userSeq=[];
     level++;
     h2.innerText=`level ${level}`;
